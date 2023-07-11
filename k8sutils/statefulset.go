@@ -321,7 +321,7 @@ func createPVCTemplateNodeConf(stsMeta metav1.ObjectMeta) corev1.PersistentVolum
 			},
 			Resources: corev1.ResourceRequirements{
 				Requests: corev1.ResourceList{
-					corev1.ResourceStorage: resource.MustParse("1Mi"),
+					corev1.ResourceStorage: resource.MustParse("1Gi"),
 				},
 			},
 			VolumeMode: func() *corev1.PersistentVolumeMode {
